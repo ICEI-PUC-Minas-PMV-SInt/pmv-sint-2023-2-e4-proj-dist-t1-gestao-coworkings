@@ -1,16 +1,25 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11652646&assignment_repo_type=AssignmentRepo)
-> Identifique o produto que será construído. Para isso, nomeie-o da seguinte forma: imagine o produto em uma caixa, qual nome estaria 
-> escrito nela?
-# ToDoZ
 
-# Visão do Produto
-> Ter uma visão clara do produto é essencial para entender como as primeiras peças do quebra-cabeça do seu negócio se encaixarão. Essa
-> visão deve capturar a essência do valor que seu negócio oferece e transmitir uma mensagem clara e cativante para seus clientes. 
-> Utilize o seguinte modelo para criar a visão do seu produto:
+`Tecnologia em Sistemas para Internet`
 
-> Para [o nome do cliente final], cujo [o problema que precisa ser resolvido]. O [o nome do produto] é [a categoria do produto] que [o benefício-chave, razão para adquiri-lo]. Diferentemente de [alternativa da concorrência], o nosso produto [a diferença-chave].
+`Projeto de Desenvolvimento Web Back-End`
 
-Para freelancers que trabalham em diversos projetos, cujo desafio é gerenciar tarefas, priorizar atividades, manter o foco e medir o custo de cada projeto com precisão. O ToDoZ é um software de gerenciamento de tarefas e tempo baseado na técnica de pomodoro e método de Eisenhower, que melhora a concentração, aumenta a produtividade e permite um melhor planejamento financeiro. Diferentemente de outras opções no mercado, nosso produto oferece uma solução completa e eficiente para o dia a dia do freelancer.
+`4º Semestre`
+
+# ITCollabora - Gestão de CoWorkings
+
+A NomeDaEmpresa é uma plataforma online dedicada a simplificar a gestão eficiente de espaços de coWorking voltados para profissionais de Tecnologia da Informação. Nosso software proporciona uma solução completa para administrar espaços de trabalho compartilhados, permitindo que os gestores de coWorking e os profissionais de TI usufruam de uma experiência otimizada. Por meio da nossa ferramenta, os administradores podem facilmente agendar e monitorar a disponibilidade das salas, gerenciar assinaturas e pagamentos, além de fornecer uma interface intuitiva para os membros reservarem espaços de trabalho de acordo com suas necessidades. A TechCoWork também possibilita o cadastramento detalhado de informações sobre os membros, auxiliando na criação de uma comunidade colaborativa e facilitando a comunicação entre os usuários. Com nosso software, promovemos a eficácia na administração de coWorkings e oferecemos aos profissionais de TI um ambiente produtivo e tecnologicamente aprimorado para suas atividades. 📚
+
+## Integrantes
+
+* Cristhyam Augusto Soares Paraiso
+* Gabriel Rodrigues Ferro
+* Leticia Rose de Santana Lopes
+* Maria Eduarda Ribeiro de Almeida
+
+## Orientador
+
+* Luiz Alberto Ferreira Gomes
 
 
 ## Etapa 1: Requisitos do produto
