@@ -1,8 +1,8 @@
 ## Persona
-## 1 - Nômade Digital Tiago Barcellos:
+## 1 - Nômade Digital Tiago Barcellos
 25 anos, classe média, brasileiro e está passando uma temporada em Salvador-BA. O Tiago é um jovem nômade que vive uma vida itinerante, trabalhando como freelancer enquanto viaja pelo mundo. Ele optou por esse estilo de vida para aproveitar a flexibilidade de trabalhar remotamente e experimentar diferentes culturas e locais. Tiago necessita de um espaço que ofereça uma infraestrutura sólida, como acesso confiável à internet de alta velocidade e estações de trabalho confortáveis. Ele está constantemente em busca de novas experiências e oportunidades. Seu objetivo é equilibrar seu trabalho com o desejo de explorar novos lugares, conhecer pessoas e expandir suas conexões profissionais, mas enfrenta desafios como a gestão do fuso horário, a adaptação a diferentes ambientes de trabalho e a manutenção de uma rotina saudável e equilibrada enquanto viaja.
 
-## 2 - Empresária Mariana Costa:
+## 2 - Empresária Mariana Costa
 45 anos, classe média alta, italiana e residente em São Paulo-SP. A Mariana é proprietária de uma pequena empresa e está à procura de um espaço de coworking para a sua equipe. Ela precisa de um ambiente que possa ser personalizado para atender às necessidades da sua empresa, incluindo salas privativas para reuniões e uma infraestrutura de tecnologia confiável. Ela valoriza a privacidade e a segurança das informações. A Mari tem como objetivo manter o crescimento da sua empresa, expandir sua base de clientes e busca oportunidades de networking e parcerias estratégicas que possam impulsionar seus negócios para o próximo nível.
 
 ## 3 - Gestor de Coworking Luiz Otávio
