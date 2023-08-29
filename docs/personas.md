@@ -1,19 +1,14 @@
-# Personas
+## Persona
+## 1 - Nômade Digital Tiago Barcellos:
+25 anos, classe média, brasileiro e está passando uma temporada em Salvador-BA. O Tiago é um jovem nômade que vive uma vida itinerante, trabalhando como freelancer enquanto viaja pelo mundo. Ele optou por esse estilo de vida para aproveitar a flexibilidade de trabalhar remotamente e experimentar diferentes culturas e locais. Tiago necessita de um espaço que ofereça uma infraestrutura sólida, como acesso confiável à internet de alta velocidade e estações de trabalho confortáveis. Ele está constantemente em busca de novas experiências e oportunidades. Seu objetivo é equilibrar seu trabalho com o desejo de explorar novos lugares, conhecer pessoas e expandir suas conexões profissionais, mas enfrenta desafios como a gestão do fuso horário, a adaptação a diferentes ambientes de trabalho e a manutenção de uma rotina saudável e equilibrada enquanto viaja.
 
-> Identifique as principais personas e descreva suas atividades, respondendo às seguintes perguntas:
-> qual é o perfil de cada persona? O que elas esperam do produto de software?
+## 2 - Empresária Mariana Costa:
+45 anos, classe média alta, italiana e residente em São Paulo-SP. A Mariana é proprietária de uma pequena empresa e está à procura de um espaço de coworking para a sua equipe. Ela precisa de um ambiente que possa ser personalizado para atender às necessidades da sua empresa, incluindo salas privativas para reuniões e uma infraestrutura de tecnologia confiável. Ela valoriza a privacidade e a segurança das informações. A Mari tem como objetivo manter o crescimento da sua empresa, expandir sua base de clientes e busca oportunidades de networking e parcerias estratégicas que possam impulsionar seus negócios para o próximo nível.
 
-## Persona 1: Ana, a Designer Freelancer
+## 3 - Gestor de Coworking Luiz Otávio
+55 anos, classe média alta, brasileiro e reside em Balneário Camboriú-SC. Bacharel em Gestão da Informação, André é um profissional experiente na área de gestão que atua como Gerente de Operações de um espaço de coworking. Ele possui um histórico de sucesso e liderança, mas enfrenta desafios em otimizar as operações do espaço para atender às demandas em constante evolução dos clientes. Está em busca de soluções para aprimorar a experiência dos clientes e otimizar a eficiência operacional do espaço. Ele precisa de ferramentas que o ajudem a gerenciar reservas de salas, acompanhar o uso dos espaços, automatizar faturamento e proporcionar uma plataforma para comunicação interna. O objetivo de André é melhorar a satisfação dos clientes, oferecendo um ambiente de trabalho confortável e tecnológico. Além disso, gostaria de implementar práticas ecológicas em seus espaços.
 
-- **Perfil:** Ana é uma designer gráfica freelancer com vasta experiência em branding e identidade visual. Ela trabalha de forma independente e gerencia vários projetos simultaneamente.
-- **Expectativas:** Ana espera que o produto de software seja uma solução completa para o gerenciamento de suas tarefas e tempo. Ela deseja uma interface intuitiva que facilite o registro, atualização e remoção de tarefas, além de uma funcionalidade de cronometragem baseada na técnica de pomodoro para melhorar sua concentração e produtividade. Ela também espera que o software permita priorizar suas atividades com base no método de Eisenhower e ofereça a integração com o Google Calendar para uma melhor organização de suas atividades diárias.
-
-- **Atividades:** Ana utiliza o software para criar e monitorar suas tarefas em diferentes projetos, utiliza a técnica de pomodoro para manter o foco e evitar distrações, prioriza suas atividades com base na importância e urgência, e integra o calendário do Google para melhorar sua programação e cumprir prazos.
-
-## Persona 2: Carlos, o Cliente Empreendedor
-
-- **Perfil:** Carlos é um empreendedor e dono de uma agência de marketing digital. Ele frequentemente contrata freelancers para desenvolver campanhas e projetos específicos para seus clientes.
-- **Expectativas:** Carlos espera que o produto de software ofereça transparência e precisão no registro do tempo gasto pelos freelancers em cada tarefa e projeto. Ele deseja receber relatórios detalhados sobre o progresso dos trabalhos contratados, para tomar decisões informadas e garantir a eficiência da equipe freelancer.
-- **Atividades:** Carlos utiliza a plataforma para monitorar os relatórios de tempo e custo fornecidos pelos freelancers contratados, utiliza as informações para validar o trabalho realizado e fazer pagamentos precisos, e realiza avaliações de desempenho com base nas métricas apresentadas pelo software. Ele também usa os dados para tomar decisões estratégicas sobre a alocação de recursos em projetos futuros.
+## 4 - Freelancer Maria Clara
+32 anos, classe média, brasileira e residente em Recife-PE. É Bacharel em Design pela instituição CESAR School e atua como Designer Freelancer. Por trabalhar de forma independente, Maria Clara tem a necessidade de um espaço tranquilo e bem equipado para realizar suas tarefas diárias. Ela valoriza uma localização central, pois gosta de estar perto de cafés e restaurantes. Ela também procura um ambiente que estimule a criatividade e ofereça oportunidades de colaboração e networking para expandir sua rede de contatos e compartilhar ideias, e que seja pet-friendly. A Maria é uma amante de animais e possui um pet, portanto, ela procura um espaço que seja pet-friendly, onde possa trazer seu companheiro de quatro patas para o ambiente de trabalho.
 
 [Retorna](../README.md)
