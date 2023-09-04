@@ -1,9 +1,5 @@
 # Funcionalidades
 
-> Identifique as ações e/ou as interações de cada persona no produto. Descreva as 
-> funcionalidades a partir das questões: o usuário está tentando fazer algo, então o 
-> produto deve ter uma funcionalidade para isso. Qual é? Quais problemas da persona 
-> essa funcionalidade resolve? Quais benefícios ela traz para a persona? 
 
 ## Funcionalidades para Tiago Barcellos, o Nômade Digital:
 1. Localização e Descoberta de Espaços: Permite que o Tiago encontre facilmente espaços de coworking em qualquer cidade que esteja. 
