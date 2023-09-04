@@ -12,5 +12,12 @@
 4. Reserva Flexível: Possui a capacidade de reservar espaços de trabalho por curtos períodos, como por hora ou por dia. 
 5. Classificações e Avaliações: Feedback de outros membros sobre a qualidade dos espaços.
 
+## Funcionalidades para Mariana Costa, a Cliente Empresária:
+1. Pesquisa Avançada por Espaços Privativos: Fornece uma opção de pesquisa que permita a busca de espaços coworking que oferecem salas privativas, salas de reunião equipadas e espaços personalizáveis para atender às necessidades da sua equipe.
+2. Reservas Personalizadas: Possível fazer reservas personalizadas com base nas datas e na duração desejadas.
+3. Segurança e Privacidade: Destaque para opções que oferecem medidas de segurança física, como controle de acesso por cartão-chave e monitoramento de câmeras, para garantir a segurança das informações de Mariana e de sua equipe.
+4. Espaços para Eventos: Destaque para espaços que promovem eventos de networking, incluindo salas de eventos e workshops.
+
+
 
 [Retorna](../README.md)
