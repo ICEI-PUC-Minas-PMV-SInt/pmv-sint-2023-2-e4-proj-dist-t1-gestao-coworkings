@@ -18,6 +18,14 @@
 3. Segurança e Privacidade: Destaque para opções que oferecem medidas de segurança física, como controle de acesso por cartão-chave e monitoramento de câmeras, para garantir a segurança das informações de Mariana e de sua equipe.
 4. Espaços para Eventos: Destaque para espaços que promovem eventos de networking, incluindo salas de eventos e workshops.
 
+## Funcionalidades para Luiz Otávio, Gestor de Coworking:
+1. Controle de Membros: A plataforma oferece o controle de membros, permitindo que o Luiz gerencie facilmente o cadastro de novos membros e monitore suas reservas.
+2. Gerenciamento de Reservas: Oferece uma interface intuitiva para gerenciar as reservas das salas e estações de trabalho. 
+3. Calendário de Disponibilidade: Calendário de disponibilidade que mostra os espaços que estão livres em determinados horários, o que ajuda a otimizar o uso dos espaços disponíveis.
+4. Faturamento Automatizado: O sistema de faturamento gera pré-faturas com base nas reservas e serviços que o cliente deseje utilizar.
+5. Feedback dos Clientes: Os membros do coworking podem fornecer feedbacks sobre suas experiências, para que os gestores possam melhorar continuamente.
+
+
 
 
 [Retorna](../README.md)
