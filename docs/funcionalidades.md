@@ -26,6 +26,25 @@
 5. Feedback dos Clientes: Os membros do coworking podem fornecer feedbacks sobre suas experiências, para que os gestores possam melhorar continuamente.
 
 
+## Tabela de Funcionalidades:
+
+| Funcionalidades | Tiago | Mariana | Luiz |
+|-----------------|--------------|-----------------|-----------------|
+| Localização e Descoberta de Espaços | Sim | Sim | - |
+| Detalhes das Comodidades | Sim | Sim | - |
+| Conexão de Internet Confiável | Sim | Sim | Sim |
+| Reserva Flexível | Sim | Sim | - |
+| Classificações e Avaliações | Sim | Sim | Sim |
+| Pesquisa Avançada por Espaços Privativos | - | Sim | - |
+| Reservas Personalizadas | Sim | Sim | - |
+| Segurança e Privacidade | - | Sim | - |
+| Espaços para Eventos | - | Sim | - |
+| Controle de Membros | - | - | Sim |
+| Gerenciamento de Reservas | - | Sim | - |
+| Calendário de Disponibilidade | Sim | Sim | Sim |
+| Faturamento Automatizado | Sim | Sim | Sim |
+| Feedback dos Clientes | Sim | Sim | Sim |
+
 
 
 [Retorna](../README.md)
