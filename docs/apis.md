@@ -7,10 +7,22 @@
 
 | Endpoint                             | Método | Descrição                                      | Parâmetros                        | Formato da Resposta | Autenticação e Autorização |
 |--------------------------------------|--------|------------------------------------------------|-----------------------------------|---------------------|----------------------------|
-| /api/users/{user_id}/tasks/          | GET    | Obter todas as tarefas cadastradas             | user_id (string)                  | JSON                | JWT Token                  |
-| /api/users/{user_id}/tasks/{task_id} | POST   | Criar uma nova tarefa                          | user_id (string) task_id (string) | JSON                | JWT Token                  |
-| /api/users/{user_id}/tasks/{task_id} | GET    | Obter detalhes de uma tarefa específica        | user_id (string) task_id (string) | JSON                | JWT Token                  |
-| /api/users/{user_id}/tasks/{task_id} | PUT    | Atualizar os detalhes de uma tarefa específica | user_id (string) task_id (string) | JSON                | JWT Token                  |
-| /api/users/{user_id}/tasks/{task_id} | DELETE | Excluir uma tarefa específica                  | user_id (string) task_id (string) | JSON                | JWT Token                  |
+| /login       | POST   | Realizar o login do usuario no sistema          |         NULL          | JSON                | JWT Token                  |
+| /user/spaces | GET   | Volta todos os espaços que o usuário possui      |         NULL         | JSON                | JWT Token                  |
+| /user/spaces | POST    | Criar um novo espaço coworking para alugar     |         id_space              | JSON                | JWT Token                  |
+| /user/spaces/{id_space} | PUT    | Atualizar informações de um espaço já cadastrado |  id_space     | JSON                | JWT Token                  |
+| /user/reservations | DELETE | Excluir um espaço coworking                 |      NULL           | JSON                | JWT Token                  |
+| /user/reservations | GET | Volta todos os espaços que o usuário possui    |      NULL           | JSON                | JWT Token                  |
+| /user/spaces/{id_space} | POST | Criar um novo espaço coworking para alugar  |     id_space         | JSON                | JWT Token                  |
+| /user/spaces/{id_space} | PUT  | Atualizar informações de um espaço já cadastrado  |   id_space     | JSON                | JWT Token                  |
+| /spaces | DELETE | Excluir um espaço coworking                 |          NULL                  | JSON                | JWT Token                  |
+| /spaces/reserve | GET | Busca todas              |                   NULL                       | JSON                | JWT Token                  |
+| /spaces/reservations/{id_reservation}  | POST | Realizar uma reserva                  |  id_reservation   | JSON                | JWT Token                  |
+| /spaces/reservations/{id_reservation} |PUT | Altera uma reserva já existente  |      id_reservation       | JSON                | JWT Token                  |
+| /{user} | GET | Buscar dados do usuário                |                   user                 | JSON                | JWT Token                  |
+| /{user} | PUT  | Alterar dados do usuário                 |                user               | JSON                | JWT Token                  |
+| /user | POST | Realiza o cadastro de um usuário                 |           NULL                | JSON                | JWT Token                  |
+
+
 
 [Retorna](../README.md)
