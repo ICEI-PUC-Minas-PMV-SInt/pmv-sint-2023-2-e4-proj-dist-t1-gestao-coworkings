@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "neTcajkqrB4I4B2tDcsZ/pvj/roP3v8GL4D+7EqN611haQKHFRmOd47TxMwU8rooatmFpsijKhv64Q9FTWDTDA==",
+  "dgSpecHash": "fs2Ho7tRMOpKMx5xT5JLWRL4trLnRlfarENogGq/EXFq7h6wBwI043+9dt8IHZZ5Rvcs01j9ZHRDTCiiwsqWng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dudin\\Backend\\pmv-sint-2023-1-e3-proj-back-t1-time1-proj-acervo\\src\\ItCollabora\\ItCollabora.csproj",
+  "projectFilePath": "C:\\Users\\dudin\\Source\\repos\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\ItCollabora.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dudin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\dudin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

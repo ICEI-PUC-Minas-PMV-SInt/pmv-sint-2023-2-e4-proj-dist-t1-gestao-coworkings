@@ -229,11 +229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dudin\\Backend\\pmv-sint-2023-1-e3-proj-back-t1-time1-proj-acervo\\src\\ItCollabora\\ItCollabora.csproj",
+      "projectUniqueName": "C:\\Users\\dudin\\Source\\repos\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\ItCollabora.csproj",
       "projectName": "ItCollabora",
-      "projectPath": "C:\\Users\\dudin\\Backend\\pmv-sint-2023-1-e3-proj-back-t1-time1-proj-acervo\\src\\ItCollabora\\ItCollabora.csproj",
+      "projectPath": "C:\\Users\\dudin\\Source\\repos\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\ItCollabora.csproj",
       "packagesPath": "C:\\Users\\dudin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dudin\\Backend\\pmv-sint-2023-1-e3-proj-back-t1-time1-proj-acervo\\src\\ItCollabora\\obj\\",
+      "outputPath": "C:\\Users\\dudin\\Source\\repos\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dudin\\AppData\\Roaming\\NuGet\\NuGet.Config",
