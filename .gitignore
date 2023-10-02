@@ -1,5 +1,8 @@
 # Arquivos e diretórios gerados automaticamente pelo Visual Studio
 .vscode/
+**/.vs/
+.vs/
+*.vs
 /bin/
 /obj/
 *.suo
