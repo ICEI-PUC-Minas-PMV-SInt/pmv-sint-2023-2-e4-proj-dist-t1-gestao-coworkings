@@ -9,3 +9,20 @@
 *.user
 *.sln.docstates
 project.assets.json
+
+# Ignorar pastas e arquivos do Visual Studio
+.vs/
+**/.vs/
+*.suo
+
+# Ignorar arquivos de cache e índices
+obj/
+**/FileContentIndex/*.vsidx
+**/*.editorconfig
+**/*.cache
+
+# Ignorar o arquivo VSWorkspaceState.json
+../../.vs/VSWorkspaceState.json
+
+# Ignorar arquivos relacionados ao SQLite
+../../.vs/slnx.sqlite
