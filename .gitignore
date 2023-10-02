@@ -1,0 +1,8 @@
+# Arquivos e diretórios gerados automaticamente pelo Visual Studio
+.vscode/
+/bin/
+/obj/
+*.suo
+*.user
+*.sln.docstates
+project.assets.json
