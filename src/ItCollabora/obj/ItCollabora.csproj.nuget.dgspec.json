@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dudin\\Source\\repos\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\ItCollabora.csproj": {}
+    "E:\\Faculdade\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\ItCollabora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dudin\\Source\\repos\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\ItCollabora.csproj": {
+    "E:\\Faculdade\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\ItCollabora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dudin\\Source\\repos\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\ItCollabora.csproj",
+        "projectUniqueName": "E:\\Faculdade\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\ItCollabora.csproj",
         "projectName": "ItCollabora",
-        "projectPath": "C:\\Users\\dudin\\Source\\repos\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\ItCollabora.csproj",
-        "packagesPath": "C:\\Users\\dudin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dudin\\Source\\repos\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\obj\\",
+        "projectPath": "E:\\Faculdade\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\ItCollabora.csproj",
+        "packagesPath": "C:\\Users\\Kyo\\.nuget\\packages\\",
+        "outputPath": "E:\\Faculdade\\pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings\\src\\ItCollabora\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dudin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
