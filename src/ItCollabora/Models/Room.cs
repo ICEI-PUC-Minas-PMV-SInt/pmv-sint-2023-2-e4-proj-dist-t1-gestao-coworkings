@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace ItCollabora.Models
 {
     
-    public class Room
+    public class RoomModel
     {
         [Key]
         public Guid RoomId { get; set; } = Guid.NewGuid();
@@ -24,8 +24,8 @@ namespace ItCollabora.Models
         [ForeignKey("OwnerUserId")]
         public Guid OwnerUserId { get; set; }
 
-        public User OwnerUser { get; set; }
+        public UserModel OwnerUser { get; set; }
 
-        public ICollection<User> ReservedByUsers { get; set; } = new List<User>();
+        public ICollection<UserModel> ReservedByUsers { get; set; } = new List<UserModel>();
     }
 }

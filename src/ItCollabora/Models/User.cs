@@ -8,7 +8,7 @@ using ItCollabora.Models;
 
 namespace ItCollabora.Models
 {
-    public class User
+    public class UserModel
     {
         [Key]
         public Guid UserId { get; set; } = Guid.NewGuid();
@@ -22,9 +22,9 @@ namespace ItCollabora.Models
         [Required, MaxLength(50), JsonIgnore]
         public string EncryptedPassword { get; set; } = Guid.Empty.ToString();
 
-        public ICollection<Room> OwnRooms { get; set; } = new List<Room>();
+        public ICollection<RoomModel> OwnRooms { get; set; } = new List<RoomModel>();
 
-        public ICollection<Room> RoomBookings { get; set; } = new List<Room>();
+        public ICollection<RoomModel> RoomBookings { get; set; } = new List<RoomModel>();
     }
 
 }

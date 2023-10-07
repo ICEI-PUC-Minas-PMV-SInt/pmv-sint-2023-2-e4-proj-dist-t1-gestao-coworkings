@@ -1,10 +1,9 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ItCollabora.Models
 {
-    public class Rent
+    public class RentModel
     {
         [Key]
         public Guid RentId { get; set; } = Guid.NewGuid();
@@ -22,9 +21,9 @@ namespace ItCollabora.Models
         public DateTime EndDate { get; set; }
 
         [ForeignKey("UserId")]
-        public User User { get; set; }
+        public UserModel User { get; set; }
 
         [ForeignKey("RoomId")]
-        public Room Room { get; set; }
+        public RoomModel Room { get; set; }
     }
 }
