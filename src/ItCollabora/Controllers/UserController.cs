@@ -3,18 +3,18 @@ using Microsoft.AspNetCore.Mvc;
 using ItCollabora.Models;
 using ItCollabora.Repository.Interfaces;
 
-namespace ItCollabora.Controllers
+namespace ItCollabora.Controllers {
 
     [Route("api/[controller]")]
-    [ApiController]
-    public class UserController : ControllerBase
-    {
+[ApiController]
+public class UserController : ControllerBase
+{
 
-        private readonly IUserRepository _userRepository;
+    private readonly IUserRepository _userRepository;
 
-        public UserController(IUserRepository userRepository) {
-            _userRepository = userRepository;
-        }
+    public UserController(IUserRepository userRepository) {
+        _userRepository = userRepository;
+    }
 
 
 
@@ -93,4 +93,5 @@ namespace ItCollabora.Controllers
         }
 
     }
+}
 }
