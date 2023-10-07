@@ -18,24 +18,48 @@ namespace ItCollabora.Repository
             return await _dbContext.User.ToListAsync();
         }
 
-        public async Task<UserModel> GetOne(Guid userId, SystemOfUserDBContext _dbContext)
+        public async Task<UserModel> GetOne(Guid userId)
         {
             return await _dbContext.User.FirstOrDefaultAsync(u => u.UserId == userId);
         }
 
-        public Task<UserModel> CreateOne(UserModel user)
+        public async Task<UserModel> CreateOne(UserModel user)
         {
-            throw new NotImplementedException();
+            user.UserId = Guid.NewGuid();
+            _dbContext.User.Add(user);
+            await _dbContext.SaveChangesAsync();
+            return user;
         }
 
-        public Task DeleteOne(Guid userId)
+        public async Task<UserModel> Modify(UserModel updatedUser, Guid userId)
         {
-            throw new NotImplementedException();
+            UserModel user = await GetOne(userId);
+            if (user == null)
+            {
+                throw new Exception($"Usuário com o Id {userId} não foi encontrado");
+            }
+
+            user.Name = updatedUser.Name;
+            user.Email = updatedUser.Email;
+            user.EncryptedPassword = updatedUser.EncryptedPassword;
+            user.RoomBookings = updatedUser.RoomBookings;
+            user.OwnRooms = updatedUser.OwnRooms;
+
+            await _dbContext.SaveChangesAsync();
+
+            return updatedUser;
         }
 
-        public Task<UserModel> Modify(UserModel updatedUser, Guid userId)
+        public async Task DeleteOne(Guid userId)
         {
-            throw new NotImplementedException();
+            UserModel user = await GetOne(userId);
+            if (user == null)
+            {
+                throw new Exception($"Usuário com o Id {userId} não foi encontrado");
+            } 
+
+            _dbContext.User.Remove(user);
+            await _dbContext.SaveChangesAsync();
         }
     }
 }
