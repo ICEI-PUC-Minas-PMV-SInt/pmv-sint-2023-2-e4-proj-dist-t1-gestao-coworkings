@@ -17,7 +17,7 @@ builder.Services.AddEntityFrameworkSqlServer()
         options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))
     );
 
-builder.Services.AddScoped<IUserRepository, UserRepository>()
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 

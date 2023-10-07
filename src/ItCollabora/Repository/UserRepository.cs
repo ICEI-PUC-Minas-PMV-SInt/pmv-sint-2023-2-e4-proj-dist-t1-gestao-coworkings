@@ -13,11 +13,6 @@ namespace ItCollabora.Repository
             _dbContext = systemOfUserDBContext;
         }
 
-        public async Task<List<UserModel>> GetAll()
-        {
-            return await _dbContext.User.ToListAsync();
-        }
-
         public async Task<UserModel> GetOne(Guid userId)
         {
             return await _dbContext.User.FirstOrDefaultAsync(u => u.UserId == userId);
@@ -42,8 +37,8 @@ namespace ItCollabora.Repository
             user.Name = updatedUser.Name;
             user.Email = updatedUser.Email;
             user.EncryptedPassword = updatedUser.EncryptedPassword;
-            user.RoomBookings = updatedUser.RoomBookings;
-            user.OwnRooms = updatedUser.OwnRooms;
+            user.RentedRooms = updatedUser.RentedRooms;
+            user.OwnedRooms = updatedUser.OwnedRooms;
 
             await _dbContext.SaveChangesAsync();
 

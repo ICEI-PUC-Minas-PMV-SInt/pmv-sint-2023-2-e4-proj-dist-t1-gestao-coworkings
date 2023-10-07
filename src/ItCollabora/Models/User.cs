@@ -10,21 +10,19 @@ namespace ItCollabora.Models
 {
     public class UserModel
     {
-        [Key]
-        public Guid UserId { get; set; } = Guid.NewGuid();
 
+        [Key]
+        public Guid UserId { get; set; }
         [Required, MaxLength(50)]
         public string Name { get; set; }
-
         [Required, MaxLength(50)]
         public string Email { get; set; }
-
         [Required, MaxLength(50), JsonIgnore]
-        public string EncryptedPassword { get; set; } = Guid.Empty.ToString();
+        public string EncryptedPassword { get; set; }
 
-        public ICollection<RoomModel> OwnRooms { get; set; } = new List<RoomModel>();
-
-        public ICollection<RoomModel> RoomBookings { get; set; } = new List<RoomModel>();
+        public List<RoomModel> OwnedRooms { get; set; }
+        public List<RoomModel> RentedRooms { get; set; }
+        public List<RentModel> Rents { get; set; }
     }
 
 }
