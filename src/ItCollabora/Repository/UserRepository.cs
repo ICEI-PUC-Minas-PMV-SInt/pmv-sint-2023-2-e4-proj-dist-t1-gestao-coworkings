@@ -20,9 +20,9 @@ namespace ItCollabora.Repository
 
         public async Task<UserModel> CreateOne(UserModel user)
         {
-            user.UserId = Guid.NewGuid();
-            _dbContext.User.Add(user);
+            await _dbContext.User.AddAsync(user);
             await _dbContext.SaveChangesAsync();
+
             return user;
         }
 
@@ -37,7 +37,6 @@ namespace ItCollabora.Repository
             user.Name = updatedUser.Name;
             user.Email = updatedUser.Email;
             user.EncryptedPassword = updatedUser.EncryptedPassword;
-            user.RentedRooms = updatedUser.RentedRooms;
             user.OwnedRooms = updatedUser.OwnedRooms;
 
             await _dbContext.SaveChangesAsync();

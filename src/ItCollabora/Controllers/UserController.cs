@@ -6,7 +6,7 @@ using ItCollabora.Repository.Interfaces;
 namespace ItCollabora.Controllers {
 
     [Route("api/[controller]")]
-[ApiController]
+    [ApiController]
 public class UserController : ControllerBase
 {
 
@@ -38,16 +38,10 @@ public class UserController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<UserModel>> CreateUser(UserModel user)
+    public async Task<ActionResult<UserModel>> CreateUser([FromBody] UserModel user)
     {
-        try
-        {
-            UserModel createdUser = await _userRepository.CreateOne(user);
-            return CreatedAtAction(nameof(GetOne), new { userId = createdUser.UserId }, createdUser);
-        } catch (Exception ex)
-        {
-            return StatusCode(StatusCodes.Status500InternalServerError, $"Erro interno do servidor: {ex.Message}");
-        }
+        UserModel createdUser = await _userRepository.CreateOne(user);
+        return Ok(createdUser);
     }
 
     [HttpPut("{userId}")]
@@ -55,13 +49,6 @@ public class UserController : ControllerBase
     {
         try
         {
-            UserModel existingUser = await _userRepository.GetOne(userId);
-
-            if (existingUser == null)
-            {
-                return NotFound();
-            }
-
             updatedUser.UserId = userId;
             UserModel modifiedUser = await _userRepository.Modify(updatedUser, userId);
 

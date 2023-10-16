@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ItCollabora.Migrations
 {
     [DbContext(typeof(SystemOfUserDBContext))]
-    [Migration("20231007192938_InitialDB")]
+    [Migration("20231016211759_InitialDB")]
     partial class InitialDB
     {
         /// <inheritdoc />
@@ -24,33 +24,6 @@ namespace ItCollabora.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("ItCollabora.Models.RentModel", b =>
-                {
-                    b.Property<Guid>("RentId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid>("RoomId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("RentId");
-
-                    b.HasIndex("RoomId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Rent");
-                });
 
             modelBuilder.Entity("ItCollabora.Models.RoomModel", b =>
                 {
@@ -74,22 +47,12 @@ namespace ItCollabora.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<Guid?>("RentedByUserId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<int>("TotalCapacity")
                         .HasColumnType("int");
-
-                    b.Property<Guid?>("UserModelUserId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("RoomId");
 
                     b.HasIndex("OwnerUserId");
-
-                    b.HasIndex("RentedByUserId");
-
-                    b.HasIndex("UserModelUserId");
 
                     b.ToTable("Room");
                 });
@@ -120,25 +83,6 @@ namespace ItCollabora.Migrations
                     b.ToTable("User");
                 });
 
-            modelBuilder.Entity("ItCollabora.Models.RentModel", b =>
-                {
-                    b.HasOne("ItCollabora.Models.RoomModel", "Room")
-                        .WithMany()
-                        .HasForeignKey("RoomId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("ItCollabora.Models.UserModel", "User")
-                        .WithMany("Rents")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.Navigation("Room");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("ItCollabora.Models.RoomModel", b =>
                 {
                     b.HasOne("ItCollabora.Models.UserModel", "OwnerUser")
@@ -147,29 +91,12 @@ namespace ItCollabora.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ItCollabora.Models.UserModel", "RentedByUser")
-                        .WithMany("RentedRooms")
-                        .HasForeignKey("RentedByUserId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.HasOne("ItCollabora.Models.UserModel", "UserModelUser")
-                        .WithMany()
-                        .HasForeignKey("UserModelUserId");
-
                     b.Navigation("OwnerUser");
-
-                    b.Navigation("RentedByUser");
-
-                    b.Navigation("UserModelUser");
                 });
 
             modelBuilder.Entity("ItCollabora.Models.UserModel", b =>
                 {
                     b.Navigation("OwnedRooms");
-
-                    b.Navigation("RentedRooms");
-
-                    b.Navigation("Rents");
                 });
 #pragma warning restore 612, 618
         }
