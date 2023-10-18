@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\src",
-    "\\src\\ItCollabora",
-    "\\src\\ItCollabora\\Data",
-    "\\src\\ItCollabora\\Models",
-    "\\src\\ItCollabora\\Properties"
+    ""
   ],
-  "SelectedNode": "\\src\\ItCollabora\\Data\\SystemOfUserDBContext.cs",
+  "SelectedNode": "\\ItCollabora.sln",
   "PreviewInSolutionExplorer": false
 }

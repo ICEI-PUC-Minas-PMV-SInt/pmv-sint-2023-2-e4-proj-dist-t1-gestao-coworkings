@@ -12,10 +12,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddEntityFrameworkSqlServer()
+builder.Services
     .AddDbContext<AppDBContext>(
-        options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))
-    );
+        options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
