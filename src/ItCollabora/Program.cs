@@ -13,7 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddEntityFrameworkSqlServer()
-    .AddDbContext<SystemOfUserDBContext>(
+    .AddDbContext<AppDBContext>(
         options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))
     );
 

@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Nova pasta\\Teste",
     "\\src",
-    "\\src\\ItCollabora"
+    "\\src\\ItCollabora",
+    "\\src\\ItCollabora\\Data",
+    "\\src\\ItCollabora\\Models",
+    "\\src\\ItCollabora\\Properties"
   ],
-  "SelectedNode": "\\src\\ItCollabora",
+  "SelectedNode": "\\src\\ItCollabora\\Data\\SystemOfUserDBContext.cs",
   "PreviewInSolutionExplorer": false
 }

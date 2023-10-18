@@ -7,8 +7,8 @@ namespace ItCollabora.Repository
 {
     public class UserRepository : IUserRepository
     {
-        private readonly SystemOfUserDBContext _dbContext;
-        public UserRepository(SystemOfUserDBContext systemOfUserDBContext) {
+        private readonly AppDBContext _dbContext;
+        public UserRepository(AppDBContext systemOfUserDBContext) {
 
             _dbContext = systemOfUserDBContext;
         }

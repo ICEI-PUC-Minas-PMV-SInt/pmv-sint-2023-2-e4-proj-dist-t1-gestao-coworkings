@@ -3,9 +3,9 @@ using ItCollabora.Models;
 
 namespace ItCollabora.Data
 {
-    public class SystemOfUserDBContext : DbContext
+    public class AppDBContext : DbContext
     {
-        public SystemOfUserDBContext(DbContextOptions<SystemOfUserDBContext> options) : base(options)
+        public AppDBContext(DbContextOptions<AppDBContext> options) : base(options)
         {
         }
 
