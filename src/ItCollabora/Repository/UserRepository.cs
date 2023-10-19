@@ -8,9 +8,9 @@ namespace ItCollabora.Repository
     public class UserRepository : IUserRepository
     {
         private readonly AppDBContext _dbContext;
-        public UserRepository(AppDBContext systemOfUserDBContext) {
+        public UserRepository(AppDBContext AppDBContext) {
 
-            _dbContext = systemOfUserDBContext;
+            _dbContext = AppDBContext;
         }
 
         public async Task<UserModel> GetOne(Guid userId)

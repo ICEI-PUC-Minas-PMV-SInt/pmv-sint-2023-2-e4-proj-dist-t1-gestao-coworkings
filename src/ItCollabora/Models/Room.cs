@@ -25,7 +25,7 @@ namespace ItCollabora.Models
         [ForeignKey("OwnerUser")]
         public Guid OwnerUserId { get; set; }
         
-        public UserModel OwnerUser { get; set; }
+        public virtual UserModel OwnerUser { get; set; }
 
     }
 }
