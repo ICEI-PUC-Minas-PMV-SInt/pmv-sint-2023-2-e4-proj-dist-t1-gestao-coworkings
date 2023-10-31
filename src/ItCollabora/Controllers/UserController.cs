@@ -44,22 +44,43 @@ public class UserController : ControllerBase
         return Ok(createdUser);
     }
 
-    [HttpPut("{userId}")]
-    public async Task<IActionResult> UpdateUser(Guid userId, UserModel updatedUser)
-    {
-        try
+        [HttpPut("{userId}")]
+        public async Task<IActionResult> UpdateUser(Guid userId, UserModel updatedUser)
         {
-            updatedUser.UserId = userId;
-            UserModel modifiedUser = await _userRepository.Modify(updatedUser, userId);
+            try
+            {
+                UserModel existingUser = await _userRepository.GetOne(userId);
 
-            return Ok(modifiedUser);
-        } catch (Exception ex)
-        {
-            return StatusCode(StatusCodes.Status500InternalServerError, $"Erro interno do servidor: {ex.Message}");
+                if (existingUser == null)
+                {
+                    return NotFound();
+                }
+
+                if (!string.IsNullOrEmpty(updatedUser.Name))
+                {
+                    existingUser.Name = updatedUser.Name;
+                }
+
+                if (!string.IsNullOrEmpty(updatedUser.Email))
+                {
+                    existingUser.Email = updatedUser.Email;
+                }
+
+                if (!string.IsNullOrEmpty(updatedUser.EncryptedPassword))
+                {
+                    existingUser.EncryptedPassword = updatedUser.EncryptedPassword;
+                }
+
+                await _userRepository.Modify(existingUser, userId);
+
+                return Ok(existingUser);
+            } catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Erro interno do servidor: {ex.Message}");
+            }
         }
-    }
 
-    [HttpDelete("{userId}")]
+        [HttpDelete("{userId}")]
     public async Task<IActionResult> DeleteUser(Guid userId)
     {
         try
