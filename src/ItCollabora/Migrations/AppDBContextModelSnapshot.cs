@@ -22,6 +22,29 @@ namespace ItCollabora.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ItCollabora.Models.Rent", b =>
+                {
+                    b.Property<Guid>("IdRent")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("IdRoom")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdUser")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("IdRent");
+
+                    b.ToTable("Rents");
+                });
+
             modelBuilder.Entity("ItCollabora.Models.RoomModel", b =>
                 {
                     b.Property<Guid>("RoomId")
