@@ -11,6 +11,7 @@ namespace ItCollabora.Data
 
         public DbSet<UserModel> User { get; set; }
         public DbSet<RoomModel> Room { get; set; }
+        public DbSet<Rent> Rents { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
