@@ -3,6 +3,7 @@ using ItCollabora.Models;
 using ItCollabora.Repository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace ItCollabora.Repository
 {
@@ -14,6 +15,12 @@ namespace ItCollabora.Repository
         {
 
             _dbContext = AppDBContext;
+        }
+
+        public async Task<List<Rent>> GetAllRent()
+        {
+            return await _dbContext.Rents.ToListAsync();
+
         }
 
         public async Task<Rent> GetRentById(Guid id)
@@ -31,5 +38,35 @@ namespace ItCollabora.Repository
             return rent;
         }
 
+        public async Task<Rent> UpdateRent(Guid idRent, Rent rentUpdate)
+        {
+            Rent rent = await GetRentById(idRent);
+            if (rent == null)
+            {
+                throw new Exception($"Não encontramos reserva para o {idRent}");
+            }
+
+            rent.StartDate = rentUpdate.StartDate;
+            rent.EndDate = rentUpdate.EndDate;
+
+     
+            await _dbContext.SaveChangesAsync();
+
+            return rentUpdate;
+        }
+
+        public async Task DeleteRent(Guid idRent)
+        {
+            Rent getRent = await GetRentById(idRent);
+            if (getRent == null)
+            {
+                throw new Exception($"A reserva de número {idRent} não foi encontrada");
+            }
+
+            _dbContext.Rents.Remove(getRent);
+            await _dbContext.SaveChangesAsync();
+        }
+
+        
     }
 }
