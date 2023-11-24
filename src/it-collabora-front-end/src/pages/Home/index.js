@@ -6,25 +6,21 @@ import './styles.css';
 
 const Home = () => {
   return (
-    <>
-     {/* <Navbar /> */}
-      <div className="home-container">
-        <div className="base-card home-card">
-          <div className="home-content-container">
-            <div>
-              <h1>Bem-vindo à Nova Era da Produtividade</h1>
-              <p>Explore nosso catálogo de espaços que transformarão sua experiência de trabalho.</p>
-              <ButtonIcon />
-            </div>
-          </div>
-          <div className="home-image-container">
-            <MainImage />
+    <div className="home-container">
+      <div className="base-card home-card">
+        <div className="home-content-container">
+          <div>
+            <h1>Bem-vindo à Nova Era da Produtividade</h1>
+            <p>Explore nosso catálogo de espaços que transformarão sua experiência de trabalho.</p>
+            <ButtonIcon />
           </div>
         </div>
+        <div className="home-image-container">
+          <MainImage />
+        </div>
       </div>
-    </>
+    </div>
   );
 };
-
 
 export default Home;
