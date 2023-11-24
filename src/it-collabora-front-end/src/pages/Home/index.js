@@ -12,9 +12,11 @@ const Home = () => {
           <div>
             <h1>Bem-vindo à Nova Era da Produtividade</h1>
             <p>Explore nosso catálogo de espaços que transformarão sua experiência de trabalho.</p>
-            <Link to="/catalog">
-            <ButtonIcon />
-            </Link>
+            <div>
+              <Link to="/catalog">
+                <ButtonIcon />
+              </Link>
+            </div>
           </div>
         </div>
         <div className="home-image-container">
