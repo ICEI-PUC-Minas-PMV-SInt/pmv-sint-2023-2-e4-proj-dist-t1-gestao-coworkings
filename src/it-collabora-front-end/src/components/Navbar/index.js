@@ -1,14 +1,15 @@
 import './styles.css';
-//import '@popperjs/core';
 import 'bootstrap/js/src/collapse';
+
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-primary main-nav">
       <div className="container-fluid">
-        <a href="link" className="nav-logo-text">
+        <Link to="/" className="nav-logo-text">
           <h4>It Collabora</h4>
-        </a>
+        </Link>
 
         <button
           className="navbar-toggler"
@@ -25,15 +26,13 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="dscatalog-navbar">
           <ul className="navbar-nav offset-md-2 main-menu">
             <li>
-              <a href="link" className="active">
-                HOME
-              </a>
+              <NavLink to="/" activeClassName="active" exact>HOME</NavLink>
             </li>
             <li>
-              <a href="link">CATÁLOGO</a>
+              <NavLink to="/catalog" activeClassName="active">CATÁLOGO</NavLink>
             </li>
             <li>
-              <a href="link">ADMIN</a>
+              <NavLink to="/login" activeClassName="active">LOGIN</NavLink>
             </li>
           </ul>
         </div>
