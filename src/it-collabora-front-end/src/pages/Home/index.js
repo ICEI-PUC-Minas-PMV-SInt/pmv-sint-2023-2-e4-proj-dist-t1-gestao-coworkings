@@ -1,8 +1,8 @@
-import { ReactComponent as MainImage } from 'C:/Users/l.lopes/Downloads/PUC2/pmv-sint-2023-2-e4-proj-dist-t1-gestao-coworkings/src/it-collabora-front-end/src/assets/images/home-image.svg';
-import ButtonIcon from '../../components/ButtonIcon';
-import { Link } from 'react-router-dom';
+import { ReactComponent as MainImage } from "../../assets/images/home-image.svg";
+import ButtonIcon from "../../components/ButtonIcon";
+import { Link } from "react-router-dom";
 
-import './styles.css';
+import "./styles.css";
 
 const Home = () => {
   return (
@@ -11,7 +11,10 @@ const Home = () => {
         <div className="home-content-container">
           <div>
             <h1>Bem-vindo à Nova Era da Produtividade</h1>
-            <p>Explore nosso catálogo de espaços que transformarão sua experiência de trabalho.</p>
+            <p>
+              Explore nosso catálogo de espaços que transformarão sua
+              experiência de trabalho.
+            </p>
             <div>
               <Link to="/catalog">
                 <ButtonIcon />
