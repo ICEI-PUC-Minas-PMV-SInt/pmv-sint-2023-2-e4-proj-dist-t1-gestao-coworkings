@@ -5,8 +5,6 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
@@ -20,8 +18,17 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IRoomRepository, RoomRepository>();
 builder.Services.AddScoped<IRentRepository, RentRepository>();
 
-var app = builder.Build();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost", builder =>
+    {
+        builder.WithOrigins("http://localhost:3001")
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
 
+var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
@@ -30,8 +37,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
+
+
+app.UseCors("AllowLocalhost");
 
 app.MapControllers();
 
