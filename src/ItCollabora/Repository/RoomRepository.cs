@@ -44,7 +44,7 @@ namespace ItCollabora.Repository
             room.Description = updatedRoom.Description;
             room.Price = updatedRoom.Price;
             room.TotalCapacity = updatedRoom.TotalCapacity;
-            room.OwnerUserId = updatedRoom.OwnerUserId;
+            room.UserId = updatedRoom.UserId;
 
             await _dbContext.SaveChangesAsync();
 

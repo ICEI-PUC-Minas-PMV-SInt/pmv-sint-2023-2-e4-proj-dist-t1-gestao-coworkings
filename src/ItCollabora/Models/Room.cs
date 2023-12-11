@@ -22,10 +22,9 @@ namespace ItCollabora.Models
         [Required]
         public int TotalCapacity { get; set; }
 
-        [ForeignKey("OwnerUser")]
-        public Guid OwnerUserId { get; set; }
-        
-        public virtual UserModel OwnerUser { get; set; }
+        [ForeignKey("UserId")]
+        public Guid UserId { get; set; }
+
 
     }
 }

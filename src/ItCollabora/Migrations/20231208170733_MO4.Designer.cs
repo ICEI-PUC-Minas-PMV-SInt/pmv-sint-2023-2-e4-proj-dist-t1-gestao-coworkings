@@ -4,6 +4,7 @@ using ItCollabora.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ItCollabora.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    partial class AppDBContextModelSnapshot : ModelSnapshot
+    [Migration("20231208170733_MO4")]
+    partial class MO4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -61,21 +64,18 @@ namespace ItCollabora.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<Guid>("OwnerUserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2");
 
                     b.Property<int>("TotalCapacity")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("UserModelUserId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("RoomId");
 
-                    b.HasIndex("UserModelUserId");
+                    b.HasIndex("OwnerUserId");
 
                     b.ToTable("Room");
                 });
@@ -105,9 +105,13 @@ namespace ItCollabora.Migrations
 
             modelBuilder.Entity("ItCollabora.Models.RoomModel", b =>
                 {
-                    b.HasOne("ItCollabora.Models.UserModel", null)
+                    b.HasOne("ItCollabora.Models.UserModel", "OwnerUser")
                         .WithMany("OwnedRooms")
-                        .HasForeignKey("UserModelUserId");
+                        .HasForeignKey("OwnerUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("OwnerUser");
                 });
 
             modelBuilder.Entity("ItCollabora.Models.UserModel", b =>

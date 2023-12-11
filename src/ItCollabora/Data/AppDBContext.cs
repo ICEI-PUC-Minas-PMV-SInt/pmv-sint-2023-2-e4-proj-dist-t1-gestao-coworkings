@@ -16,12 +16,6 @@ namespace ItCollabora.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            modelBuilder.Entity<RoomModel>()
-                .HasOne(r => r.OwnerUser)            
-                .WithMany(u => u.OwnedRooms)        
-                .HasForeignKey(r => r.OwnerUserId)    
-                .OnDelete(DeleteBehavior.Cascade);   
-
             base.OnModelCreating(modelBuilder);
         }
     }
