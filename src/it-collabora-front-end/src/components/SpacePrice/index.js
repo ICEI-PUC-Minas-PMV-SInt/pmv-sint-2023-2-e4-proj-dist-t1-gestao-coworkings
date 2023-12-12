@@ -1,20 +1,12 @@
-// import { formatPrice } from 'util/formatters';
-import './styles.css';
+import React from "react";
 
-
-// type Props = {
-//   price: number;
-// }
-
-// const ProductPrice = ({price} : Props) => {
-const SpacePrice = () => {
-
-    return (
-        <div className="product-price-container">
-            <span>R$</span>
-            <h3>2345.5</h3>
-        </div>
-    );
+const SpacePrice = ({ price }) => {
+  return (
+    <div className="product-price-container">
+      <span>R$</span>
+      <h4>{price.toFixed(2)}</h4>
+    </div>
+  );
 };
 
 export default SpacePrice;

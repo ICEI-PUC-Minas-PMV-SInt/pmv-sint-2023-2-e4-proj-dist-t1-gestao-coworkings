@@ -1,25 +1,27 @@
-import ProductCard from '../../components/SpaceCard';
+import React, { useState, useEffect } from "react";
+import ProductCard from "../../components/SpaceCard";
 
 const Catalog = () => {
-    return (
-        <div className="container my-4">
-            <div className="row">
-                <div className="col-sm-6 col-lg-4 col-xl-3">
-                    <ProductCard />
-                </div>
-                <div className="col-sm-6 col-lg-4 col-xl-3">
-                    <ProductCard />
-                </div>
-                <div className="col-sm-6 col-lg-4 col-xl-3">
-                    <ProductCard />
-                </div>
-                <div className="col-sm-6 col-lg-4 col-xl-3">
-                    <ProductCard />
-                </div>
+  const [products, setProducts] = useState([]);
 
-            </div>
-        </div>
-    );
-}
+  useEffect(() => {
+    fetch("https://localhost:7261/api/Room")
+      .then((response) => response.json())
+      .then((data) => setProducts(data))
+      .catch((error) => console.error("Erro ao obter produtos:", error));
+  }, []);
+
+  return (
+    <div className="container my-4">
+      <div className="row">
+        {products.map((product) => (
+          <div key={product.id} className="col-sm-6 col-lg-4 col-xl-3">
+            <ProductCard product={product} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default Catalog;
